@@ -135,6 +135,7 @@ void main() async {
     // get worksheet by its title
   var sheet1 = ss.worksheetByTitle('Daily Habbits');
 
+// printing all the values in the google sheet
   print(sheet1!.values.allRows().then((value) => print(value.toString())));
   print('object');
 }
